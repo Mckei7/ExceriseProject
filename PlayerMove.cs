@@ -26,7 +26,7 @@ public class PlayerMove : MonoBehaviour
         //Stop Speed
         if (Input.GetButtonUp("Horizontal"))
         {
-            rigid.velocity = new Vector2(rigid.velocity.nomalized.x * 0.5f, rigid) //수정            
+            rigid.velocity = new Vector2(rigid.velocity.nomalized.x * 0.5f, rigid.velocity.y)
         }
 
         //Direction Sprite
